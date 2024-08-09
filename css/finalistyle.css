@@ -1,0 +1,33 @@
+body {
+    background-image: url(../images/10.jpg);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 10px 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+section {
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 60px;
+    color: #69686f;
+    text-align: center;
+
+}
+
+p {
+    font-size: 35px;
+    text-align: center;
+    color: #69686f;
+}
+
+a {
+    color: #242526;
+    /* Cor do link */
+    text-decoration: none;
+}

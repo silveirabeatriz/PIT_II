@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery de Cupcake</title>
+    <link rel="stylesheet" href="./css/loginstyle.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="logo">Delícias de Cupcake</a>
+            <ul class="nav-links">
+                <li><a href="./cardapio.html">Cardápio</a></li>
+                <li><a href="./bebidas.html">Bebidas</a></li>
+                <li><a href="./cadastro.html">Cadastro</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="login-form">
+            <div class="login-image">
+                <img src="./images/14.jpg" alt="Imagem de Login">
+            </div>
+            <div class="login-fields">
+                <h2>Faça login na sua conta</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="username">Usuário:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit">Entrar</button>
+                </form>
+                <p>Ainda não possui cadastro? <a href="./cadastro.html">Crie uma conta</a>.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    // Lista de usuários cadastrados (simulação)
+    const usuarios = [
+        { usuario: 'usuario1', senha: 'senha123', nome: 'Usuário 1' },
+        { usuario: 'usuario2', senha: 'senha456', nome: 'Usuário 2' }
+    ];
+
+    // Função para verificar o login
+    function fazerLogin() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Verifica se o usuário e senha correspondem a um usuário cadastrado
+        const usuarioValido = usuarios.find(user => user.usuario === username && user.senha === password);
+
+        if (usuarioValido) {
+            // Redireciona para a página do cliente
+            window.location.href = './cliente.html';
+        } else {
+            // Exibe uma mensagem de erro
+            alert('Usuário ou senha incorretos. Tente novamente.');
+        }
+    }
+
+    // Adiciona um evento de clique ao botão de login
+    document.querySelector('form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Impede o envio do formulário
+        fazerLogin();
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,138 @@
+header {
+    background-color: #35383a;
+    color: #fff;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+a.logo {
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    padding: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    /* Cinza claro */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    display: flex;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.login-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.login-fields {
+    flex: 1;
+    padding: 20px;
+}
+
+.login-fields h2 {
+    margin-bottom: 20px;
+    color: #333;
+    /* Cor do texto */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    /* Cor do texto */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* Cor da borda */
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #353535;
+    /* Cor do botão */
+    color: #fff;
+    /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+    /* Cor do botão ao passar o mouse */
+}
+
+p {
+    margin-top: 15px;
+    color: #777;
+    /* Cor do texto */
+}
+
+a {
+    color: #808385;
+    /* Cor do link */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}

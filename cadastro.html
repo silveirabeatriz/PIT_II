@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery de Cupcake</title>
+    <link rel="stylesheet" href="./css/cadastrostyle.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="logo">Delícias de Cupcake</a>
+            <ul class="nav-links">
+                <li><a href="./cardapio.html">Cardápio</a></li>
+                <li><a href="./cadastro.html">Cadastro</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Cadastro</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+            </div>
+            <div class="form-group">
+                <label for="state">Estado:</label>
+                <select id="state" name="state" required>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondonia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+
+                </select>
+            </div>
+            <div>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <script>
+        function cadastrar() {
+            // Lógica de cadastro aqui
+            alert("Cadastro realizado com sucesso!");
+            // Redireciona para a página de login
+            window.location.href = "login.html";
+        }
+
+        function fazerLogin() {
+            var storedUsername = getCookie("username");
+            var storedPassword = getCookie("password");
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === storedUsername && password === storedPassword) {
+                alert("Login bem-sucedido!");
+                // Redireciona para a página desejada após o login
+                // window.location.href = "pagina_restrita.html";
+            } else {
+                alert("Credenciais inválidas. Tente novamente.");
+            }
+        }
+
+        function getCookie(name) {
+            var cookieValue = document.cookie;
+            var cookies = cookieValue.split('; ');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].split('=');
+                if (cookie[0] === name) {
+                    return cookie[1];
+                }
+            }
+            return null;
+        }
+
+    </script>
+</body>
+
+</html>

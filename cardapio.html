@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery de Cupcake</title>
+    <link rel="stylesheet" href="./css/cardapiostyle.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html" class="logo">Delícias de Cupcake</a>
+            <ul class="nav-links">
+                <li><a href="./cardapio.html">Cardápio</a></li>
+                <li><a href="./cadastro.html">Cadastro</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="imagem-lateral">
+            <img src="./images/02.jpg" alt="Imagem Lateral">
+            <img src="./images/03.jpg" alt="Imagem Lateral 2">
+            <img src="./images/04.jpg" alt="Imagem Lateral 3">
+        </div>
+
+        <section class="menu">
+            <h2>Cardápio de Cupcakes</h2>
+            <div class="cardapio">
+                <div class="cupcake">
+                    <h3>Chocolate</h3>
+                    <p>Preço: R$ 8.99</p>
+                    <button class="botao-escolha" data-sabor="Chocolate" data-preco="8.99">Escolher</button>
+                </div>
+                <div class="cupcake">
+                    <h3>Morango</h3>
+                    <p>Preço: R$ 8.99</p>
+                    <button class="botao-escolha" data-sabor="Morango" data-preco="8.99">Escolher</button>
+                </div>
+                <div class="cupcake">
+                    <h3>Baunilha</h3>
+                    <p>Preço: R$ 8.99</p>
+                    <button class="botao-escolha" data-sabor="Baunilha" data-preco="8.99">Escolher</button>
+                </div>
+                <div class="cupcake">
+                    <h3>Doce de Leite</h3>
+                    <p>Preço: R$ 8.99</p>
+                    <button class="botao-escolha" data-sabor="Doce de Leite" data-preco="8.99">Escolher</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="carrinho">
+            <h2>Carrinho</h2>
+            <ul id="lista-carrinho">
+                <!-- Aqui será mostrado o que está sendo escolhido -->
+            </ul>
+            <p id="total-gasto">Total: R$ 0.00</p>
+            <a href="./login.html" class="botao">Finalizar Pedido</a>
+        </section>
+    </main>
+    <script src="./js/js.js"></script>
+
+    <footer></footer>
+</body>
+
+</html>
